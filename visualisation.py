@@ -29,21 +29,22 @@ def select_caract(datas, colonne, file_name="select_caract_datas.csv", valeur=""
         df1.to_csv(file_name, index=False)
 
 
-def supprimer_fichier(chemin):
+def supprimer_fichier(chemins):
     """
     Supprime le fichier si il existe, sinon affiche un message.
 
     Args:
-        chemin (string): chemin d'un fichier que l'on veut supprimer
+        chemin (list): liste contenant les chemins des fichier que l'on veut supprimer
 
     Returns:
         None. Supprime un fichier
     """
-    if os.path.isfile(chemin):
-        os.remove(chemin)
-        print(f"Fichier supprimé : {chemin}")
-    else:
-        print(f"Fichier non trouvé : {chemin}")
+    for chemin in chemins:
+        if os.path.isfile(chemin):
+            os.remove(chemin)
+            print(f"Fichier supprimé : {chemin}")
+        else:
+            print(f"Fichier non trouvé : {chemin}")
 
 
 def visualisation(x, y, color, xlabel="abscisse", ylabel="ordonné"):
