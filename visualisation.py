@@ -1,7 +1,7 @@
 import pandas, os # type: ignore
 import matplotlib.pyplot as plt # type: ignore
 
-def select_caract(datas, colonne, file_name="select_caract_datas.csv", valeur=""):
+def select_caract(datas, colonne, file_name="fichiers_csv/select_caract_datas.csv", valeur=""):
     """
     Extrait toutes les lignes ayant une certaine valeur dans une colonne donnée.
     Si la valeur n'est pas renseignée, la fonction extrait simplement toute la colonne (par défaut si valeur non renseignée).

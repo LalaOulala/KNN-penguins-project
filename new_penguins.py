@@ -31,6 +31,6 @@ def ajouter_pengouin_aleatoire(df):
     # On crée un nouveau fichier .cvs qui est une copie de penguins_size mais avec le pingouin inconnu
     df_inconnu = pandas.DataFrame(inconnu, index=[len(df) + 1])
     df2 = pandas.concat([df, df_inconnu])
-    df2.to_csv("unknown_penguins.csv", index=False)
+    df2.to_csv("fichiers_csv/unknown_penguins.csv", index=False)
 
     return inconnu
