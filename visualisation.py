@@ -65,4 +65,3 @@ def visualisation(x, y, color, xlabel="abscisse", ylabel="ordonné"):
     plt.scatter(x, y, color=color)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
-    plt.show()
