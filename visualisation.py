@@ -39,12 +39,12 @@ def supprimer_fichier(chemins):
     Returns:
         None. Supprime un fichier
     """
-    for chemin in chemins:
-        if os.path.isfile(chemin):
-            os.remove(chemin)
-            print(f"Fichier supprimé : {chemin}")
+    for fichier in chemins:
+        if os.path.isfile(fichier):
+            os.remove(fichier)
+            print(f"Fichier supprimé : {fichier}")
         else:
-            print(f"Fichier non trouvé : {chemin}")
+            print(f"Fichier non trouvé : {fichier}")
 
 
 def visualisation(x, y, color, xlabel="abscisse", ylabel="ordonné"):
